@@ -1,0 +1,890 @@
+[debug] [2022-04-18T09:55:31.964Z] ----------------------------------------------------------------------
+[debug] [2022-04-18T09:55:31.975Z] Command:       /home/cliff1983/.nvm/versions/node/v14.18.1/bin/node /home/cliff1983/.nvm/versions/node/v14.18.1/bin/firebase emulators:start
+[debug] [2022-04-18T09:55:31.977Z] CLI Version:   10.5.0
+[debug] [2022-04-18T09:55:31.978Z] Platform:      linux
+[debug] [2022-04-18T09:55:31.979Z] Node Version:  v14.18.1
+[debug] [2022-04-18T09:55:31.981Z] Time:          Mon Apr 18 2022 11:55:31 GMT+0200 (Central European Summer Time)
+[debug] [2022-04-18T09:55:31.982Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-04-18T09:55:32.283Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-04-18T09:55:32.284Z] > authorizing via signed-in user (denglish357@gmail.com)
+[debug] [2022-04-18T09:55:32.574Z] openjdk version "16.0.1" 2021-04-20
+
+[debug] [2022-04-18T09:55:32.576Z] OpenJDK Runtime Environment (build 16.0.1+9-Ubuntu-120.04)
+OpenJDK 64-Bit Server VM (build 16.0.1+9-Ubuntu-120.04, mixed mode, sharing)
+
+[debug] [2022-04-18T09:55:32.588Z] Parsed Java major version: 16
+[info] i  emulators: Starting emulators: auth, functions, firestore, database, storage {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: auth, functions, firestore, database, storage"}}
+[debug] [2022-04-18T09:55:32.684Z] [hub] writing locator at /tmp/hub-port80create.json
+[warn] ⚠  functions: The following emulators are not running, calls to these services from the Functions emulator will affect production: hosting, pubsub {"metadata":{"emulator":{"name":"functions"},"message":"The following emulators are not running, calls to these services from the Functions emulator will affect production: \u001b[1mhosting, pubsub\u001b[22m"}}
+[warn] ⚠  Your requested "node" version "16" doesn't match your global version "14". Using node@14 from host. {"metadata":{"emulator":{"name":"functions"},"message":"Your requested \"node\" version \"16\" doesn't match your global version \"14\". Using node@14 from host."}}
+[debug] [2022-04-18T09:55:32.760Z] defaultcredentials: writing to file /home/cliff1983/.config/firebase/denglish357_gmail_com_application_default_credentials.json
+[debug] [2022-04-18T09:55:32.766Z] Setting GAC to /home/cliff1983/.config/firebase/denglish357_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to /home/cliff1983/.config/firebase/denglish357_gmail_com_application_default_credentials.json"}}
+[debug] [2022-04-18T09:55:32.775Z] > refreshing access token with scopes: []
+[debug] [2022-04-18T09:55:32.779Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2022-04-18T09:55:32.803Z] Failed to get Admin SDK config for port80create, falling back to cacheFailed to get Admin SDK for Firebase project port80create. Please make sure the project exists and your account has permission to access it. {"name":"FirebaseError","children":[],"exit":2,"message":"Failed to get Admin SDK for Firebase project port80create. Please make sure the project exists and your account has permission to access it.","original":{"name":"FirebaseError","children":[],"exit":1,"message":"Authentication Error: Your credentials are no longer valid. Please run \u001b[1mfirebase login --reauth\u001b[22m\n\nFor CI servers and headless environments, generate a new token with \u001b[1mfirebase login:ci\u001b[22m","status":500},"status":500}
+[debug] [2022-04-18T09:55:32.838Z] Ignoring unsupported arg: projectId {"metadata":{"emulator":{"name":"firestore"},"message":"Ignoring unsupported arg: projectId"}}
+[debug] [2022-04-18T09:55:32.839Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"firestore"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2022-04-18T09:55:32.839Z] Starting Firestore Emulator with command {"binary":"java","args":["-Dgoogle.cloud_firestore.debug_log_level=FINE","-Duser.language=en","-jar","/home/cliff1983/.cache/firebase/emulators/cloud-firestore-emulator-v1.14.1.jar","--host","localhost","--port",8081,"--rules","/home/cliff1983/Documents/port80create/firestore.rules","--functions_emulator","localhost:5001"],"optionalArgs":["port","webchannel_port","host","rules","functions_emulator","seed_from_export"],"joinArgs":false} {"metadata":{"emulator":{"name":"firestore"},"message":"Starting Firestore Emulator with command {\"binary\":\"java\",\"args\":[\"-Dgoogle.cloud_firestore.debug_log_level=FINE\",\"-Duser.language=en\",\"-jar\",\"/home/cliff1983/.cache/firebase/emulators/cloud-firestore-emulator-v1.14.1.jar\",\"--host\",\"localhost\",\"--port\",8081,\"--rules\",\"/home/cliff1983/Documents/port80create/firestore.rules\",\"--functions_emulator\",\"localhost:5001\"],\"optionalArgs\":[\"port\",\"webchannel_port\",\"host\",\"rules\",\"functions_emulator\",\"seed_from_export\"],\"joinArgs\":false}"}}
+[info] i  firestore: Firestore Emulator logging to firestore-debug.log {"metadata":{"emulator":{"name":"firestore"},"message":"Firestore Emulator logging to \u001b[1mfirestore-debug.log\u001b[22m"}}
+[debug] [2022-04-18T09:55:37.051Z] Apr 18, 2022 11:55:36 AM io.netty.util.internal.MacAddressUtil defaultMachineId
+WARNING: Failed to find a usable hardware address from the network interfaces; using random bytes: 8d:97:bb:86:33:30:c9:75
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Apr 18, 2022 11:55:36 AM io.netty.util.internal.MacAddressUtil defaultMachineId\nWARNING: Failed to find a usable hardware address from the network interfaces; using random bytes: 8d:97:bb:86:33:30:c9:75\n"}}
+[debug] [2022-04-18T09:55:37.238Z] Apr 18, 2022 11:55:37 AM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketServer start
+INFO: Started WebSocket server on ws://localhost:33899
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Apr 18, 2022 11:55:37 AM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketServer start\nINFO: Started WebSocket server on ws://localhost:33899\n"}}
+[debug] [2022-04-18T09:55:37.349Z] API endpoint: http:// {"metadata":{"emulator":{"name":"firestore"},"message":"API endpoint: http://"}}
+[debug] [2022-04-18T09:55:37.351Z] localhost:8081
+If you are using a library that supports the FIRESTORE_EMULATOR_HOST environment variable, run:
+
+   export FIRESTORE_EMULATOR_HOST=localhost:8081
+
+Dev App Server is now running.
+
+ {"metadata":{"emulator":{"name":"firestore"},"message":"localhost:8081\nIf you are using a library that supports the FIRESTORE_EMULATOR_HOST environment variable, run:\n\n   export FIRESTORE_EMULATOR_HOST=localhost:8081\n\nDev App Server is now running.\n\n"}}
+[debug] [2022-04-18T09:55:37.440Z] > refreshing access token with scopes: []
+[debug] [2022-04-18T09:55:37.441Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2022-04-18T09:55:37.452Z] Authentication Error: Your credentials are no longer valid. Please run firebase login --reauth
+
+For CI servers and headless environments, generate a new token with firebase login:ci
+[debug] [2022-04-18T09:55:37.453Z] Failed to retrieve default database instance: {"name":"FirebaseError","children":[],"exit":2,"message":"Failed to get Firebase project port80create. Please make sure the project exists and your account has permission to access it.","original":{"name":"FirebaseError","children":[],"exit":1,"message":"Authentication Error: Your credentials are no longer valid. Please run \u001b[1mfirebase login --reauth\u001b[22m\n\nFor CI servers and headless environments, generate a new token with \u001b[1mfirebase login:ci\u001b[22m","status":500},"status":500} {"metadata":{"emulator":{"name":"database"},"message":"Failed to retrieve default database instance: {\"name\":\"FirebaseError\",\"children\":[],\"exit\":2,\"message\":\"Failed to get Firebase project port80create. Please make sure the project exists and your account has permission to access it.\",\"original\":{\"name\":\"FirebaseError\",\"children\":[],\"exit\":1,\"message\":\"Authentication Error: Your credentials are no longer valid. Please run \\u001b[1mfirebase login --reauth\\u001b[22m\\n\\nFor CI servers and headless environments, generate a new token with \\u001b[1mfirebase login:ci\\u001b[22m\",\"status\":500},\"status\":500}"}}
+[debug] [2022-04-18T09:55:37.455Z] database rules config:  [{"instance":"port80create-default-rtdb","rules":"/home/cliff1983/Documents/port80create/database.rules.json"}]
+[debug] [2022-04-18T09:55:37.467Z] Ignoring unsupported arg: projectId {"metadata":{"emulator":{"name":"database"},"message":"Ignoring unsupported arg: projectId"}}
+[debug] [2022-04-18T09:55:37.468Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"database"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2022-04-18T09:55:37.469Z] Ignoring unsupported arg: rules {"metadata":{"emulator":{"name":"database"},"message":"Ignoring unsupported arg: rules"}}
+[debug] [2022-04-18T09:55:37.470Z] Starting Database Emulator with command {"binary":"java","args":["-Duser.language=en","-jar","/home/cliff1983/.cache/firebase/emulators/firebase-database-emulator-v4.7.3.jar","--host","localhost","--port",9000,"--functions_emulator_host","localhost","--functions_emulator_port",5001],"optionalArgs":["port","host","functions_emulator_port","functions_emulator_host"],"joinArgs":false} {"metadata":{"emulator":{"name":"database"},"message":"Starting Database Emulator with command {\"binary\":\"java\",\"args\":[\"-Duser.language=en\",\"-jar\",\"/home/cliff1983/.cache/firebase/emulators/firebase-database-emulator-v4.7.3.jar\",\"--host\",\"localhost\",\"--port\",9000,\"--functions_emulator_host\",\"localhost\",\"--functions_emulator_port\",5001],\"optionalArgs\":[\"port\",\"host\",\"functions_emulator_port\",\"functions_emulator_host\"],\"joinArgs\":false}"}}
+[info] i  database: Database Emulator logging to database-debug.log {"metadata":{"emulator":{"name":"database"},"message":"Database Emulator logging to \u001b[1mdatabase-debug.log\u001b[22m"}}
+[debug] [2022-04-18T09:55:42.950Z] 11:55:42.943 [NamespaceSystem-akka.actor.default-dispatcher-5] INFO akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+ {"metadata":{"emulator":{"name":"database"},"message":"11:55:42.943 [NamespaceSystem-akka.actor.default-dispatcher-5] INFO akka.event.slf4j.Slf4jLogger - Slf4jLogger started\n"}}
+[debug] [2022-04-18T09:55:43.613Z] 11:55:43.612 [main] INFO com.firebase.server.forge.App$ - Listening at localhost:9000
+ {"metadata":{"emulator":{"name":"database"},"message":"11:55:43.612 [main] INFO com.firebase.server.forge.App$ - Listening at localhost:9000\n"}}
+[debug] [2022-04-18T09:56:26.108Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"storage"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2022-04-18T09:56:30.657Z] Temp file directory for storage emulator: /tmp/firebase/storage/blobs {"metadata":{"emulator":{"name":"storage"},"message":"Temp file directory for storage emulator: /tmp/firebase/storage/blobs"}}
+[debug] [2022-04-18T09:56:30.693Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2022-04-18T09:56:30.694Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2022-04-18T09:56:30.695Z] Starting Emulator UI with command {"binary":"node","args":["/home/cliff1983/.cache/firebase/emulators/ui-v1.6.5/server.bundle.js"],"optionalArgs":[],"joinArgs":false} {"metadata":{"emulator":{"name":"ui"},"message":"Starting Emulator UI with command {\"binary\":\"node\",\"args\":[\"/home/cliff1983/.cache/firebase/emulators/ui-v1.6.5/server.bundle.js\"],\"optionalArgs\":[],\"joinArgs\":false}"}}
+[info] i  ui: Emulator UI logging to ui-debug.log {"metadata":{"emulator":{"name":"ui"},"message":"Emulator UI logging to \u001b[1mui-debug.log\u001b[22m"}}
+[debug] [2022-04-18T09:56:31.090Z] Web / API server started at localhost:4000
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at localhost:4000\n"}}
+[info] i  functions: Watching "/home/cliff1983/Documents/port80create/functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"/home/cliff1983/Documents/port80create/functions\" for Cloud Functions..."}}
+[debug] [2022-04-18T09:56:31.257Z] Validating nodejs source
+[debug] [2022-04-18T09:56:38.702Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-04-18T09:56:38.704Z] Building nodejs source
+[debug] [2022-04-18T09:56:38.705Z] Analyzing nodejs backend spec
+[debug] [2022-04-18T09:56:39.346Z] >>> HTTP REQUEST PUT http://localhost:9000/.settings/rules.json?ns=port80create-default-rtdb  
+ {
+  /* Visit https://firebase.google.com/docs/database/security to learn more about security rules. */
+  "rules": {
+    ".read": false,
+    ".write": false
+  }
+}
+[debug] [2022-04-18T09:56:41.213Z] <<< HTTP RESPONSE 200 {"content-length":"15","content-type":"application/json; charset=utf-8","access-control-allow-origin":"*","cache-control":"no-cache","x-firebase-project-id":"port80create-default-rtdb","x-firebase-project-number":"123456789","x-firebase-uuid":"975730f9-c93b-4e48-b7d7-27cdce74c94a"}
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+│ i  View Emulator UI at http://localhost:4000                │
+└─────────────────────────────────────────────────────────────┘
+
+┌────────────────┬────────────────┬─────────────────────────────────┐
+│ Emulator       │ Host:Port      │ View in Emulator UI             │
+├────────────────┼────────────────┼─────────────────────────────────┤
+│ Authentication │ localhost:9099 │ http://localhost:4000/auth      │
+├────────────────┼────────────────┼─────────────────────────────────┤
+│ Functions      │ localhost:5001 │ http://localhost:4000/functions │
+├────────────────┼────────────────┼─────────────────────────────────┤
+│ Firestore      │ localhost:8081 │ http://localhost:4000/firestore │
+├────────────────┼────────────────┼─────────────────────────────────┤
+│ Database       │ localhost:9000 │ http://localhost:4000/database  │
+├────────────────┼────────────────┼─────────────────────────────────┤
+│ Storage        │ localhost:9199 │ http://localhost:4000/storage   │
+└────────────────┴────────────────┴─────────────────────────────────┘
+  Emulator Hub running at localhost:4400
+  Other reserved ports: 4500
+
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
+[debug] [2022-04-18T10:05:53.923Z] >>> [apiv2][query] POST http://localhost:5001/functions/projects/port80create/trigger_multicast [none]
+[debug] [2022-04-18T10:05:53.924Z] >>> [apiv2][body] POST http://localhost:5001/functions/projects/port80create/trigger_multicast {"eventId":"4444fb40-2929-402f-b67a-fed16b15ceb2","eventType":"providers/firebase.auth/eventTypes/user.create","resource":{"name":"projects/port80create","service":"firebaseauth.googleapis.com"},"params":{},"timestamp":"2022-04-18T10:05:53.917Z","data":{"uid":"NhDcyS1DzASoHhPdBLRUW98gX1n5","email":"denglish357@gmail.com","emailVerified":false,"metadata":{"creationTime":"1650276353914","lastSignInTime":"1650276353912"},"customClaims":{},"providerData":[{"providerId":"password","email":"denglish357@gmail.com","federatedId":"denglish357@gmail.com","rawId":"denglish357@gmail.com"}]}}
+[debug] [2022-04-18T10:05:53.991Z] <<< [apiv2][status] POST http://localhost:5001/functions/projects/port80create/trigger_multicast 200
+[debug] [2022-04-18T10:05:53.992Z] <<< [apiv2][body] POST http://localhost:5001/functions/projects/port80create/trigger_multicast {"status":"multicast_acknowledged"}
+[debug] [2022-04-18T10:20:08.821Z] Received signal SIGHUP 1
+[info]  
+[info] i  emulators: Received SIGHUP for the first time. Starting a clean shutdown. 
+[info] i  emulators: Please wait for a clean shutdown or send the SIGHUP signal again to stop right now. 
+[debug] [2022-04-18T10:20:08.877Z] Error: write EIO
+    at afterWriteDispatched (internal/stream_base_commons.js:156:25)
+    at writeGeneric (internal/stream_base_commons.js:147:3)
+    at WriteStream.Socket._writeGeneric (net.js:798:11)
+    at WriteStream.Socket._write (net.js:810:8)
+    at writeOrBuffer (internal/streams/writable.js:358:12)
+    at WriteStream.Writable.write (internal/streams/writable.js:303:10)
+    at Console.log (/home/cliff1983/.nvm/versions/node/v14.18.1/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:79:23)
+    at Console._write (/home/cliff1983/.nvm/versions/node/v14.18.1/lib/node_modules/firebase-tools/node_modules/winston-transport/index.js:103:17)
+    at doWrite (/home/cliff1983/.nvm/versions/node/v14.18.1/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:428:64)
+    at writeOrBuffer (/home/cliff1983/.nvm/versions/node/v14.18.1/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:417:5)
+    at Console.Writable.write (/home/cliff1983/.nvm/versions/node/v14.18.1/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:334:11)
+    at DerivedLogger.ondata (/home/cliff1983/.nvm/versions/node/v14.18.1/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_readable.js:681:20)
+    at DerivedLogger.emit (events.js:412:35)
+    at DerivedLogger.emit (domain.js:475:12)
+    at addChunk (/home/cliff1983/.nvm/versions/node/v14.18.1/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_readable.js:298:12)
+    at readableAddChunk (/home/cliff1983/.nvm/versions/node/v14.18.1/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_readable.js:280:11)
+[error] 
+[error] Error: An unexpected error has occurred.
+[info] i  emulators: Shutting down emulators. {"metadata":{"emulator":{"name":"hub"},"message":"Shutting down emulators."}}
+[info] i  ui: Stopping Emulator UI {"metadata":{"emulator":{"name":"ui"},"message":"Stopping Emulator UI"}}
+[debug] [2022-04-18T10:20:08.982Z] node[4759]: ../src/node.cc:747:void node::ResetStdio(): Assertion `!(err != 0) || (err == -1 && (*__errno_location ()) == 1)' failed.
+ 1: 0xa389b0 node::Abort() [node]
+ 2: 0xa38a2e  [node]
+ 3: 0x9fd974 node::ResetStdio() [node]
+ 4: 0x9fda30 node::SignalExit(int, siginfo_t*, void*) [node]
+ 5: 0x7fdd2ec2d3c0  [/lib/x86_64-linux-gnu/libpthread.so.0]
+ 6: 0x7fdd2eb4649e epoll_wait [/lib/x86_64-linux-gnu/libc.so.6]
+ {"metadata":{"emulator":{"name":"ui"},"message":"node[4759]: ../src/node.cc:747:void node::ResetStdio(): Assertion `!(err != 0) || (err == -1 && (*__errno_location ()) == 1)' failed.\n 1: 0xa389b0 node::Abort() [node]\n 2: 0xa38a2e  [node]\n 3: 0x9fd974 node::ResetStdio() [node]\n 4: 0x9fda30 node::SignalExit(int, siginfo_t*, void*) [node]\n 5: 0x7fdd2ec2d3c0  [/lib/x86_64-linux-gnu/libpthread.so.0]\n 6: 0x7fdd2eb4649e epoll_wait [/lib/x86_64-linux-gnu/libc.so.6]\n"}}
+[debug] [2022-04-18T10:20:08.998Z]  7: 0x13d06bf  [node]
+ 8: 0x13be9e8 uv_run [node]
+ 9: 0xa79502 node::NodeMainInstance::Run() [node]
+10: 0xa01755 node::Start(int, char**) [node]
+11: 0x7fdd2ea4b0b3 __libc_start_main [/lib/x86_64-linux-gnu/libc.so.6]
+12: 0x98a4cc  [node]
+ {"metadata":{"emulator":{"name":"ui"},"message":" 7: 0x13d06bf  [node]\n 8: 0x13be9e8 uv_run [node]\n 9: 0xa79502 node::NodeMainInstance::Run() [node]\n10: 0xa01755 node::Start(int, char**) [node]\n11: 0x7fdd2ea4b0b3 __libc_start_main [/lib/x86_64-linux-gnu/libc.so.6]\n12: 0x98a4cc  [node]\n"}}
+[warn] ⚠  Emulator UI has exited upon receiving signal: SIGABRT 
+[info] i  functions: Stopping Functions Emulator {"metadata":{"emulator":{"name":"functions"},"message":"Stopping Functions Emulator"}}
+[info] i  database: Stopping Database Emulator {"metadata":{"emulator":{"name":"database"},"message":"Stopping Database Emulator"}}
+[debug] [2022-04-18T10:20:09.093Z] 12:20:09.055 [Thread-0] INFO com.firebase.server.forge.App$ - Attempting graceful shutdown.
+ {"metadata":{"emulator":{"name":"database"},"message":"12:20:09.055 [Thread-0] INFO com.firebase.server.forge.App$ - Attempting graceful shutdown.\n"}}
+[debug] [2022-04-18T11:05:54.554Z] ----------------------------------------------------------------------
+[debug] [2022-04-18T11:05:54.567Z] Command:       /home/cliff1983/.nvm/versions/node/v14.18.1/bin/node /home/cliff1983/.nvm/versions/node/v14.18.1/bin/firebase emulators:start
+[debug] [2022-04-18T11:05:54.569Z] CLI Version:   10.5.0
+[debug] [2022-04-18T11:05:54.569Z] Platform:      linux
+[debug] [2022-04-18T11:05:54.570Z] Node Version:  v14.18.1
+[debug] [2022-04-18T11:05:54.587Z] Time:          Mon Apr 18 2022 13:05:54 GMT+0200 (Central European Summer Time)
+[debug] [2022-04-18T11:05:54.588Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-04-18T11:05:54.999Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-04-18T11:05:55.000Z] > authorizing via signed-in user (denglish357@gmail.com)
+[debug] [2022-04-18T11:05:55.361Z] openjdk version "16.0.1" 2021-04-20
+OpenJDK Runtime Environment (build 16.0.1+9-Ubuntu-120.04)
+OpenJDK 64-Bit Server VM (build 16.0.1+9-Ubuntu-120.04, mixed mode, sharing)
+
+[debug] [2022-04-18T11:05:55.388Z] Parsed Java major version: 16
+[info] i  emulators: Starting emulators: auth, functions, firestore, database, storage {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: auth, functions, firestore, database, storage"}}
+[debug] [2022-04-18T11:05:55.521Z] [hub] writing locator at /tmp/hub-port80create.json
+[warn] ⚠  functions: The following emulators are not running, calls to these services from the Functions emulator will affect production: hosting, pubsub {"metadata":{"emulator":{"name":"functions"},"message":"The following emulators are not running, calls to these services from the Functions emulator will affect production: \u001b[1mhosting, pubsub\u001b[22m"}}
+[warn] ⚠  Your requested "node" version "16" doesn't match your global version "14". Using node@14 from host. {"metadata":{"emulator":{"name":"functions"},"message":"Your requested \"node\" version \"16\" doesn't match your global version \"14\". Using node@14 from host."}}
+[debug] [2022-04-18T11:05:55.666Z] defaultcredentials: writing to file /home/cliff1983/.config/firebase/denglish357_gmail_com_application_default_credentials.json
+[debug] [2022-04-18T11:05:55.740Z] Setting GAC to /home/cliff1983/.config/firebase/denglish357_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to /home/cliff1983/.config/firebase/denglish357_gmail_com_application_default_credentials.json"}}
+[debug] [2022-04-18T11:05:55.761Z] > refreshing access token with scopes: []
+[debug] [2022-04-18T11:05:55.765Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2022-04-18T11:05:56.094Z] <<< HTTP RESPONSE 200 {"cache-control":"no-cache, no-store, max-age=0, must-revalidate","pragma":"no-cache","date":"Mon, 18 Apr 2022 11:05:56 GMT","expires":"Mon, 01 Jan 1990 00:00:00 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-04-18T11:05:56.120Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/port80create/adminSdkConfig [none]
+[debug] [2022-04-18T11:05:56.837Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/port80create/adminSdkConfig 200
+[debug] [2022-04-18T11:05:56.838Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/port80create/adminSdkConfig {"projectId":"port80create","databaseURL":"https://port80create-default-rtdb.europe-west1.firebasedatabase.app","storageBucket":"port80create.appspot.com","locationId":"europe-west6"}
+[debug] [2022-04-18T11:05:56.893Z] Ignoring unsupported arg: projectId {"metadata":{"emulator":{"name":"firestore"},"message":"Ignoring unsupported arg: projectId"}}
+[debug] [2022-04-18T11:05:56.895Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"firestore"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2022-04-18T11:05:56.896Z] Starting Firestore Emulator with command {"binary":"java","args":["-Dgoogle.cloud_firestore.debug_log_level=FINE","-Duser.language=en","-jar","/home/cliff1983/.cache/firebase/emulators/cloud-firestore-emulator-v1.14.1.jar","--host","localhost","--port",8081,"--rules","/home/cliff1983/Documents/port80create/firestore.rules","--functions_emulator","localhost:5001"],"optionalArgs":["port","webchannel_port","host","rules","functions_emulator","seed_from_export"],"joinArgs":false} {"metadata":{"emulator":{"name":"firestore"},"message":"Starting Firestore Emulator with command {\"binary\":\"java\",\"args\":[\"-Dgoogle.cloud_firestore.debug_log_level=FINE\",\"-Duser.language=en\",\"-jar\",\"/home/cliff1983/.cache/firebase/emulators/cloud-firestore-emulator-v1.14.1.jar\",\"--host\",\"localhost\",\"--port\",8081,\"--rules\",\"/home/cliff1983/Documents/port80create/firestore.rules\",\"--functions_emulator\",\"localhost:5001\"],\"optionalArgs\":[\"port\",\"webchannel_port\",\"host\",\"rules\",\"functions_emulator\",\"seed_from_export\"],\"joinArgs\":false}"}}
+[info] i  firestore: Firestore Emulator logging to firestore-debug.log {"metadata":{"emulator":{"name":"firestore"},"message":"Firestore Emulator logging to \u001b[1mfirestore-debug.log\u001b[22m"}}
+[debug] [2022-04-18T11:06:03.037Z] Apr 18, 2022 1:06:02 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketServer start
+INFO: Started WebSocket server on ws://localhost:34429
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Apr 18, 2022 1:06:02 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketServer start\nINFO: Started WebSocket server on ws://localhost:34429\n"}}
+[debug] [2022-04-18T11:06:03.191Z] API endpoint: http:// {"metadata":{"emulator":{"name":"firestore"},"message":"API endpoint: http://"}}
+[debug] [2022-04-18T11:06:03.193Z] localhost:8081 {"metadata":{"emulator":{"name":"firestore"},"message":"localhost:8081"}}
+[debug] [2022-04-18T11:06:03.196Z] 
+If you are using a library that supports the FIRESTORE_EMULATOR_HOST environment variable, run:
+
+   export FIRESTORE_EMULATOR_HOST=localhost:8081
+
+Dev App Server is now running.
+
+ {"metadata":{"emulator":{"name":"firestore"},"message":"\nIf you are using a library that supports the FIRESTORE_EMULATOR_HOST environment variable, run:\n\n   export FIRESTORE_EMULATOR_HOST=localhost:8081\n\nDev App Server is now running.\n\n"}}
+[debug] [2022-04-18T11:06:03.312Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/port80create [none]
+[debug] [2022-04-18T11:06:03.777Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/port80create 200
+[debug] [2022-04-18T11:06:03.778Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/port80create {"projectId":"port80create","projectNumber":"544209860326","displayName":"port80Create","name":"projects/port80create","resources":{"hostingSite":"port80create","realtimeDatabaseInstance":"port80create-default-rtdb","storageBucket":"port80create.appspot.com","locationId":"europe-west6"},"state":"ACTIVE"}
+[debug] [2022-04-18T11:06:03.782Z] database rules config:  [{"instance":"port80create-default-rtdb","rules":"/home/cliff1983/Documents/port80create/database.rules.json"}]
+[debug] [2022-04-18T11:06:03.797Z] Ignoring unsupported arg: projectId {"metadata":{"emulator":{"name":"database"},"message":"Ignoring unsupported arg: projectId"}}
+[debug] [2022-04-18T11:06:03.798Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"database"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2022-04-18T11:06:03.799Z] Ignoring unsupported arg: rules {"metadata":{"emulator":{"name":"database"},"message":"Ignoring unsupported arg: rules"}}
+[debug] [2022-04-18T11:06:03.800Z] Starting Database Emulator with command {"binary":"java","args":["-Duser.language=en","-jar","/home/cliff1983/.cache/firebase/emulators/firebase-database-emulator-v4.7.3.jar","--host","localhost","--port",9000,"--functions_emulator_host","localhost","--functions_emulator_port",5001],"optionalArgs":["port","host","functions_emulator_port","functions_emulator_host"],"joinArgs":false} {"metadata":{"emulator":{"name":"database"},"message":"Starting Database Emulator with command {\"binary\":\"java\",\"args\":[\"-Duser.language=en\",\"-jar\",\"/home/cliff1983/.cache/firebase/emulators/firebase-database-emulator-v4.7.3.jar\",\"--host\",\"localhost\",\"--port\",9000,\"--functions_emulator_host\",\"localhost\",\"--functions_emulator_port\",5001],\"optionalArgs\":[\"port\",\"host\",\"functions_emulator_port\",\"functions_emulator_host\"],\"joinArgs\":false}"}}
+[info] i  database: Database Emulator logging to database-debug.log {"metadata":{"emulator":{"name":"database"},"message":"Database Emulator logging to \u001b[1mdatabase-debug.log\u001b[22m"}}
+[debug] [2022-04-18T11:06:09.930Z] 13:06:09.922 [NamespaceSystem-akka.actor.default-dispatcher-5] INFO akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+ {"metadata":{"emulator":{"name":"database"},"message":"13:06:09.922 [NamespaceSystem-akka.actor.default-dispatcher-5] INFO akka.event.slf4j.Slf4jLogger - Slf4jLogger started\n"}}
+[debug] [2022-04-18T11:06:11.043Z] 13:06:11.039 [main] INFO com.firebase.server.forge.App$ - Listening at localhost:9000
+ {"metadata":{"emulator":{"name":"database"},"message":"13:06:11.039 [main] INFO com.firebase.server.forge.App$ - Listening at localhost:9000\n"}}
+[debug] [2022-04-18T11:06:52.075Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"storage"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2022-04-18T11:06:56.046Z] Temp file directory for storage emulator: /tmp/firebase/storage/blobs {"metadata":{"emulator":{"name":"storage"},"message":"Temp file directory for storage emulator: /tmp/firebase/storage/blobs"}}
+[debug] [2022-04-18T11:06:56.085Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2022-04-18T11:06:56.086Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2022-04-18T11:06:56.087Z] Starting Emulator UI with command {"binary":"node","args":["/home/cliff1983/.cache/firebase/emulators/ui-v1.6.5/server.bundle.js"],"optionalArgs":[],"joinArgs":false} {"metadata":{"emulator":{"name":"ui"},"message":"Starting Emulator UI with command {\"binary\":\"node\",\"args\":[\"/home/cliff1983/.cache/firebase/emulators/ui-v1.6.5/server.bundle.js\"],\"optionalArgs\":[],\"joinArgs\":false}"}}
+[info] i  ui: Emulator UI logging to ui-debug.log {"metadata":{"emulator":{"name":"ui"},"message":"Emulator UI logging to \u001b[1mui-debug.log\u001b[22m"}}
+[debug] [2022-04-18T11:06:56.535Z] Web / API server started at localhost:4000
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at localhost:4000\n"}}
+[info] i  functions: Watching "/home/cliff1983/Documents/port80create/functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"/home/cliff1983/Documents/port80create/functions\" for Cloud Functions..."}}
+[debug] [2022-04-18T11:06:56.645Z] Validating nodejs source
+[debug] [2022-04-18T11:07:05.036Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-04-18T11:07:05.037Z] Building nodejs source
+[debug] [2022-04-18T11:07:05.038Z] Analyzing nodejs backend spec
+[debug] [2022-04-18T11:07:05.615Z] >>> HTTP REQUEST PUT http://localhost:9000/.settings/rules.json?ns=port80create-default-rtdb  
+ {
+  /* Visit https://firebase.google.com/docs/database/security to learn more about security rules. */
+  "rules": {
+    ".read": false,
+    ".write": false
+  }
+}
+[debug] [2022-04-18T11:07:07.214Z] <<< HTTP RESPONSE 200 {"content-length":"15","content-type":"application/json; charset=utf-8","access-control-allow-origin":"*","cache-control":"no-cache","x-firebase-project-id":"port80create-default-rtdb","x-firebase-project-number":"123456789","x-firebase-uuid":"aa82d3a3-be5a-4b73-baae-e41e241ee860"}
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+│ i  View Emulator UI at http://localhost:4000                │
+└─────────────────────────────────────────────────────────────┘
+
+┌────────────────┬────────────────┬─────────────────────────────────┐
+│ Emulator       │ Host:Port      │ View in Emulator UI             │
+├────────────────┼────────────────┼─────────────────────────────────┤
+│ Authentication │ localhost:9099 │ http://localhost:4000/auth      │
+├────────────────┼────────────────┼─────────────────────────────────┤
+│ Functions      │ localhost:5001 │ http://localhost:4000/functions │
+├────────────────┼────────────────┼─────────────────────────────────┤
+│ Firestore      │ localhost:8081 │ http://localhost:4000/firestore │
+├────────────────┼────────────────┼─────────────────────────────────┤
+│ Database       │ localhost:9000 │ http://localhost:4000/database  │
+├────────────────┼────────────────┼─────────────────────────────────┤
+│ Storage        │ localhost:9199 │ http://localhost:4000/storage   │
+└────────────────┴────────────────┴─────────────────────────────────┘
+  Emulator Hub running at localhost:4400
+  Other reserved ports: 4500
+
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
+[debug] [2022-04-18T11:12:30.923Z] >>> [apiv2][query] POST http://localhost:5001/functions/projects/port80create/trigger_multicast [none]
+[debug] [2022-04-18T11:12:30.924Z] >>> [apiv2][body] POST http://localhost:5001/functions/projects/port80create/trigger_multicast {"eventId":"243d75a9-1ce2-4f59-8db0-be90c4896f01","eventType":"providers/firebase.auth/eventTypes/user.create","resource":{"name":"projects/port80create","service":"firebaseauth.googleapis.com"},"params":{},"timestamp":"2022-04-18T11:12:30.922Z","data":{"uid":"nL07sTcA6vJPIu2tL9SwSfznMocM","email":"denglish357@gmail.com","emailVerified":false,"metadata":{"creationTime":"1650280350917","lastSignInTime":"1650280350916"},"customClaims":{},"providerData":[{"providerId":"password","email":"denglish357@gmail.com","federatedId":"denglish357@gmail.com","rawId":"denglish357@gmail.com"}]}}
+[debug] [2022-04-18T11:12:30.976Z] <<< [apiv2][status] POST http://localhost:5001/functions/projects/port80create/trigger_multicast 200
+[debug] [2022-04-18T11:12:30.976Z] <<< [apiv2][body] POST http://localhost:5001/functions/projects/port80create/trigger_multicast {"status":"multicast_acknowledged"}
+[debug] [2022-04-18T13:11:33.200Z] Received signal SIGHUP 1
+[info]  
+[info] i  emulators: Received SIGHUP for the first time. Starting a clean shutdown. 
+[info] i  emulators: Please wait for a clean shutdown or send the SIGHUP signal again to stop right now. 
+[debug] [2022-04-18T13:11:33.261Z] Error: write EIO
+    at afterWriteDispatched (internal/stream_base_commons.js:156:25)
+    at writeGeneric (internal/stream_base_commons.js:147:3)
+    at WriteStream.Socket._writeGeneric (net.js:798:11)
+    at WriteStream.Socket._write (net.js:810:8)
+    at writeOrBuffer (internal/streams/writable.js:358:12)
+    at WriteStream.Writable.write (internal/streams/writable.js:303:10)
+    at Console.log (/home/cliff1983/.nvm/versions/node/v14.18.1/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:79:23)
+    at Console._write (/home/cliff1983/.nvm/versions/node/v14.18.1/lib/node_modules/firebase-tools/node_modules/winston-transport/index.js:103:17)
+    at doWrite (/home/cliff1983/.nvm/versions/node/v14.18.1/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:428:64)
+    at writeOrBuffer (/home/cliff1983/.nvm/versions/node/v14.18.1/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:417:5)
+    at Console.Writable.write (/home/cliff1983/.nvm/versions/node/v14.18.1/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:334:11)
+    at DerivedLogger.ondata (/home/cliff1983/.nvm/versions/node/v14.18.1/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_readable.js:681:20)
+    at DerivedLogger.emit (events.js:412:35)
+    at DerivedLogger.emit (domain.js:475:12)
+    at addChunk (/home/cliff1983/.nvm/versions/node/v14.18.1/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_readable.js:298:12)
+    at readableAddChunk (/home/cliff1983/.nvm/versions/node/v14.18.1/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_readable.js:280:11)
+[error] 
+[error] Error: An unexpected error has occurred.
+[info] i  emulators: Shutting down emulators. {"metadata":{"emulator":{"name":"hub"},"message":"Shutting down emulators."}}
+[info] i  ui: Stopping Emulator UI {"metadata":{"emulator":{"name":"ui"},"message":"Stopping Emulator UI"}}
+[debug] [2022-04-18T13:11:33.359Z] node[3534]: ../src/node.cc:747:void node::ResetStdio(): Assertion `!(err != 0) || (err == -1 && (*__errno_location ()) == 1)' failed.
+ 1: 0xa389b0 node::Abort() [node]
+ 2: 0xa38a2e  [node]
+ 3: 0x9fd974 node::ResetStdio() [node]
+ 4: 0x9fda30 node::SignalExit(int, siginfo_t*, void*) [node]
+ 5: 0x7f421823d3c0  [/lib/x86_64-linux-gnu/libpthread.so.0]
+ 6: 0x7f421815649e epoll_wait [/lib/x86_64-linux-gnu/libc.so.6]
+ {"metadata":{"emulator":{"name":"ui"},"message":"node[3534]: ../src/node.cc:747:void node::ResetStdio(): Assertion `!(err != 0) || (err == -1 && (*__errno_location ()) == 1)' failed.\n 1: 0xa389b0 node::Abort() [node]\n 2: 0xa38a2e  [node]\n 3: 0x9fd974 node::ResetStdio() [node]\n 4: 0x9fda30 node::SignalExit(int, siginfo_t*, void*) [node]\n 5: 0x7f421823d3c0  [/lib/x86_64-linux-gnu/libpthread.so.0]\n 6: 0x7f421815649e epoll_wait [/lib/x86_64-linux-gnu/libc.so.6]\n"}}
+[debug] [2022-04-18T13:11:33.372Z]  7: 0x13d06bf  [node]
+ 8: 0x13be9e8 uv_run [node]
+ {"metadata":{"emulator":{"name":"ui"},"message":" 7: 0x13d06bf  [node]\n 8: 0x13be9e8 uv_run [node]\n"}}
+[debug] [2022-04-18T13:11:33.387Z]  9: 0xa79502 node::NodeMainInstance::Run() [node]
+10: 0xa01755 node::Start(int, char**) [node]
+11: 0x7f421805b0b3 __libc_start_main [/lib/x86_64-linux-gnu/libc.so.6]
+12: 0x98a4cc  [node]
+ {"metadata":{"emulator":{"name":"ui"},"message":" 9: 0xa79502 node::NodeMainInstance::Run() [node]\n10: 0xa01755 node::Start(int, char**) [node]\n11: 0x7f421805b0b3 __libc_start_main [/lib/x86_64-linux-gnu/libc.so.6]\n12: 0x98a4cc  [node]\n"}}
+[warn] ⚠  Emulator UI has exited upon receiving signal: SIGABRT 
+[info] i  functions: Stopping Functions Emulator {"metadata":{"emulator":{"name":"functions"},"message":"Stopping Functions Emulator"}}
+[info] i  database: Stopping Database Emulator {"metadata":{"emulator":{"name":"database"},"message":"Stopping Database Emulator"}}
+[debug] [2022-04-18T13:11:33.437Z] 15:11:33.425 [Thread-0] INFO com.firebase.server.forge.App$ - Attempting graceful shutdown.
+ {"metadata":{"emulator":{"name":"database"},"message":"15:11:33.425 [Thread-0] INFO com.firebase.server.forge.App$ - Attempting graceful shutdown.\n"}}
+[debug] [2022-04-18T13:11:33.472Z] 15:11:33.464 [NamespaceSystem-akka.actor.default-dispatcher-7] INFO com.firebase.core.namespace.Terminator$Terminator - 1 actors left to terminate: port80create-default-rtdb
+ {"metadata":{"emulator":{"name":"database"},"message":"15:11:33.464 [NamespaceSystem-akka.actor.default-dispatcher-7] INFO com.firebase.core.namespace.Terminator$Terminator - 1 actors left to terminate: port80create-default-rtdb\n"}}
+[debug] [2022-04-18T13:44:02.422Z] ----------------------------------------------------------------------
+[debug] [2022-04-18T13:44:02.430Z] Command:       /home/cliff1983/.nvm/versions/node/v14.18.1/bin/node /home/cliff1983/.nvm/versions/node/v14.18.1/bin/firebase emulators:start
+[debug] [2022-04-18T13:44:02.431Z] CLI Version:   10.5.0
+[debug] [2022-04-18T13:44:02.432Z] Platform:      linux
+[debug] [2022-04-18T13:44:02.432Z] Node Version:  v14.18.1
+[debug] [2022-04-18T13:44:02.441Z] Time:          Mon Apr 18 2022 15:44:02 GMT+0200 (Central European Summer Time)
+[debug] [2022-04-18T13:44:02.442Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-04-18T13:44:02.730Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-04-18T13:44:02.731Z] > authorizing via signed-in user (denglish357@gmail.com)
+[debug] [2022-04-18T13:44:03.020Z] openjdk version "16.0.1" 2021-04-20
+OpenJDK Runtime Environment (build 16.0.1+9-Ubuntu-120.04)
+
+[debug] [2022-04-18T13:44:03.022Z] OpenJDK 64-Bit Server VM (build 16.0.1+9-Ubuntu-120.04, mixed mode, sharing)
+
+[debug] [2022-04-18T13:44:03.033Z] Parsed Java major version: 16
+[info] i  emulators: Starting emulators: auth, functions, firestore, database, storage {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: auth, functions, firestore, database, storage"}}
+[debug] [2022-04-18T13:44:03.131Z] [hub] writing locator at /tmp/hub-port80create.json
+[warn] ⚠  functions: The following emulators are not running, calls to these services from the Functions emulator will affect production: hosting, pubsub {"metadata":{"emulator":{"name":"functions"},"message":"The following emulators are not running, calls to these services from the Functions emulator will affect production: \u001b[1mhosting, pubsub\u001b[22m"}}
+[warn] ⚠  Your requested "node" version "16" doesn't match your global version "14". Using node@14 from host. {"metadata":{"emulator":{"name":"functions"},"message":"Your requested \"node\" version \"16\" doesn't match your global version \"14\". Using node@14 from host."}}
+[debug] [2022-04-18T13:44:03.277Z] defaultcredentials: writing to file /home/cliff1983/.config/firebase/denglish357_gmail_com_application_default_credentials.json
+[debug] [2022-04-18T13:44:03.281Z] Setting GAC to /home/cliff1983/.config/firebase/denglish357_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to /home/cliff1983/.config/firebase/denglish357_gmail_com_application_default_credentials.json"}}
+[debug] [2022-04-18T13:44:03.287Z] > refreshing access token with scopes: []
+[debug] [2022-04-18T13:44:03.289Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2022-04-18T13:44:03.608Z] <<< HTTP RESPONSE 200 {"cache-control":"no-cache, no-store, max-age=0, must-revalidate","date":"Mon, 18 Apr 2022 13:44:03 GMT","pragma":"no-cache","expires":"Mon, 01 Jan 1990 00:00:00 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-04-18T13:44:03.632Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/port80create/adminSdkConfig [none]
+[debug] [2022-04-18T13:44:04.182Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/port80create/adminSdkConfig 200
+[debug] [2022-04-18T13:44:04.183Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/port80create/adminSdkConfig {"projectId":"port80create","databaseURL":"https://port80create-default-rtdb.europe-west1.firebasedatabase.app","storageBucket":"port80create.appspot.com","locationId":"europe-west6"}
+[debug] [2022-04-18T13:44:04.223Z] Ignoring unsupported arg: projectId {"metadata":{"emulator":{"name":"firestore"},"message":"Ignoring unsupported arg: projectId"}}
+[debug] [2022-04-18T13:44:04.224Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"firestore"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2022-04-18T13:44:04.225Z] Starting Firestore Emulator with command {"binary":"java","args":["-Dgoogle.cloud_firestore.debug_log_level=FINE","-Duser.language=en","-jar","/home/cliff1983/.cache/firebase/emulators/cloud-firestore-emulator-v1.14.1.jar","--host","localhost","--port",8081,"--rules","/home/cliff1983/Documents/port80create/firestore.rules","--functions_emulator","localhost:5001"],"optionalArgs":["port","webchannel_port","host","rules","functions_emulator","seed_from_export"],"joinArgs":false} {"metadata":{"emulator":{"name":"firestore"},"message":"Starting Firestore Emulator with command {\"binary\":\"java\",\"args\":[\"-Dgoogle.cloud_firestore.debug_log_level=FINE\",\"-Duser.language=en\",\"-jar\",\"/home/cliff1983/.cache/firebase/emulators/cloud-firestore-emulator-v1.14.1.jar\",\"--host\",\"localhost\",\"--port\",8081,\"--rules\",\"/home/cliff1983/Documents/port80create/firestore.rules\",\"--functions_emulator\",\"localhost:5001\"],\"optionalArgs\":[\"port\",\"webchannel_port\",\"host\",\"rules\",\"functions_emulator\",\"seed_from_export\"],\"joinArgs\":false}"}}
+[info] i  firestore: Firestore Emulator logging to firestore-debug.log {"metadata":{"emulator":{"name":"firestore"},"message":"Firestore Emulator logging to \u001b[1mfirestore-debug.log\u001b[22m"}}
+[debug] [2022-04-18T13:44:08.086Z] Apr 18, 2022 3:44:07 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketServer start
+INFO: Started WebSocket server on ws://localhost:43405
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Apr 18, 2022 3:44:07 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketServer start\nINFO: Started WebSocket server on ws://localhost:43405\n"}}
+[debug] [2022-04-18T13:44:08.187Z] API endpoint: http:// {"metadata":{"emulator":{"name":"firestore"},"message":"API endpoint: http://"}}
+[debug] [2022-04-18T13:44:08.189Z] localhost:8081
+If you are using a library that supports the FIRESTORE_EMULATOR_HOST environment variable, run:
+
+   export FIRESTORE_EMULATOR_HOST=localhost:8081
+
+Dev App Server is now running.
+
+ {"metadata":{"emulator":{"name":"firestore"},"message":"localhost:8081\nIf you are using a library that supports the FIRESTORE_EMULATOR_HOST environment variable, run:\n\n   export FIRESTORE_EMULATOR_HOST=localhost:8081\n\nDev App Server is now running.\n\n"}}
+[debug] [2022-04-18T13:44:08.317Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/port80create [none]
+[debug] [2022-04-18T13:44:08.756Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/port80create 200
+[debug] [2022-04-18T13:44:08.757Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/port80create {"projectId":"port80create","projectNumber":"544209860326","displayName":"port80Create","name":"projects/port80create","resources":{"hostingSite":"port80create","realtimeDatabaseInstance":"port80create-default-rtdb","storageBucket":"port80create.appspot.com","locationId":"europe-west6"},"state":"ACTIVE"}
+[debug] [2022-04-18T13:44:08.759Z] database rules config:  [{"instance":"port80create-default-rtdb","rules":"/home/cliff1983/Documents/port80create/database.rules.json"}]
+[debug] [2022-04-18T13:44:08.771Z] Ignoring unsupported arg: projectId {"metadata":{"emulator":{"name":"database"},"message":"Ignoring unsupported arg: projectId"}}
+[debug] [2022-04-18T13:44:08.772Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"database"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2022-04-18T13:44:08.773Z] Ignoring unsupported arg: rules {"metadata":{"emulator":{"name":"database"},"message":"Ignoring unsupported arg: rules"}}
+[debug] [2022-04-18T13:44:08.774Z] Starting Database Emulator with command {"binary":"java","args":["-Duser.language=en","-jar","/home/cliff1983/.cache/firebase/emulators/firebase-database-emulator-v4.7.3.jar","--host","localhost","--port",9000,"--functions_emulator_host","localhost","--functions_emulator_port",5001],"optionalArgs":["port","host","functions_emulator_port","functions_emulator_host"],"joinArgs":false} {"metadata":{"emulator":{"name":"database"},"message":"Starting Database Emulator with command {\"binary\":\"java\",\"args\":[\"-Duser.language=en\",\"-jar\",\"/home/cliff1983/.cache/firebase/emulators/firebase-database-emulator-v4.7.3.jar\",\"--host\",\"localhost\",\"--port\",9000,\"--functions_emulator_host\",\"localhost\",\"--functions_emulator_port\",5001],\"optionalArgs\":[\"port\",\"host\",\"functions_emulator_port\",\"functions_emulator_host\"],\"joinArgs\":false}"}}
+[info] i  database: Database Emulator logging to database-debug.log {"metadata":{"emulator":{"name":"database"},"message":"Database Emulator logging to \u001b[1mdatabase-debug.log\u001b[22m"}}
+[debug] [2022-04-18T13:44:13.819Z] 15:44:13.813 [NamespaceSystem-akka.actor.default-dispatcher-5] INFO akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+ {"metadata":{"emulator":{"name":"database"},"message":"15:44:13.813 [NamespaceSystem-akka.actor.default-dispatcher-5] INFO akka.event.slf4j.Slf4jLogger - Slf4jLogger started\n"}}
+[debug] [2022-04-18T13:44:14.444Z] 15:44:14.443 [main] INFO com.firebase.server.forge.App$ - Listening at localhost:9000
+ {"metadata":{"emulator":{"name":"database"},"message":"15:44:14.443 [main] INFO com.firebase.server.forge.App$ - Listening at localhost:9000\n"}}
+[debug] [2022-04-18T13:44:54.373Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"storage"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2022-04-18T13:45:00.058Z] Temp file directory for storage emulator: /tmp/firebase/storage/blobs {"metadata":{"emulator":{"name":"storage"},"message":"Temp file directory for storage emulator: /tmp/firebase/storage/blobs"}}
+[debug] [2022-04-18T13:45:00.105Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2022-04-18T13:45:00.106Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2022-04-18T13:45:00.107Z] Starting Emulator UI with command {"binary":"node","args":["/home/cliff1983/.cache/firebase/emulators/ui-v1.6.5/server.bundle.js"],"optionalArgs":[],"joinArgs":false} {"metadata":{"emulator":{"name":"ui"},"message":"Starting Emulator UI with command {\"binary\":\"node\",\"args\":[\"/home/cliff1983/.cache/firebase/emulators/ui-v1.6.5/server.bundle.js\"],\"optionalArgs\":[],\"joinArgs\":false}"}}
+[info] i  ui: Emulator UI logging to ui-debug.log {"metadata":{"emulator":{"name":"ui"},"message":"Emulator UI logging to \u001b[1mui-debug.log\u001b[22m"}}
+[debug] [2022-04-18T13:45:00.693Z] Web / API server started at localhost:4000
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at localhost:4000\n"}}
+[info] i  functions: Watching "/home/cliff1983/Documents/port80create/functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"/home/cliff1983/Documents/port80create/functions\" for Cloud Functions..."}}
+[debug] [2022-04-18T13:45:00.940Z] Validating nodejs source
+[debug] [2022-04-18T13:45:11.351Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-04-18T13:45:11.352Z] Building nodejs source
+[debug] [2022-04-18T13:45:11.353Z] Analyzing nodejs backend spec
+[debug] [2022-04-18T13:45:12.236Z] >>> HTTP REQUEST PUT http://localhost:9000/.settings/rules.json?ns=port80create-default-rtdb  
+ {
+  /* Visit https://firebase.google.com/docs/database/security to learn more about security rules. */
+  "rules": {
+    ".read": false,
+    ".write": false
+  }
+}
+[debug] [2022-04-18T13:45:15.166Z] <<< HTTP RESPONSE 200 {"content-length":"15","content-type":"application/json; charset=utf-8","access-control-allow-origin":"*","cache-control":"no-cache","x-firebase-project-id":"port80create-default-rtdb","x-firebase-project-number":"123456789","x-firebase-uuid":"eefb4438-74fc-447c-8765-ed32974df346"}
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+│ i  View Emulator UI at http://localhost:4000                │
+└─────────────────────────────────────────────────────────────┘
+
+┌────────────────┬────────────────┬─────────────────────────────────┐
+│ Emulator       │ Host:Port      │ View in Emulator UI             │
+├────────────────┼────────────────┼─────────────────────────────────┤
+│ Authentication │ localhost:9099 │ http://localhost:4000/auth      │
+├────────────────┼────────────────┼─────────────────────────────────┤
+│ Functions      │ localhost:5001 │ http://localhost:4000/functions │
+├────────────────┼────────────────┼─────────────────────────────────┤
+│ Firestore      │ localhost:8081 │ http://localhost:4000/firestore │
+├────────────────┼────────────────┼─────────────────────────────────┤
+│ Database       │ localhost:9000 │ http://localhost:4000/database  │
+├────────────────┼────────────────┼─────────────────────────────────┤
+│ Storage        │ localhost:9199 │ http://localhost:4000/storage   │
+└────────────────┴────────────────┴─────────────────────────────────┘
+  Emulator Hub running at localhost:4400
+  Other reserved ports: 4500
+
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
+[debug] [2022-04-18T13:50:46.300Z] >>> [apiv2][query] POST http://localhost:5001/functions/projects/port80create/trigger_multicast [none]
+[debug] [2022-04-18T13:50:46.302Z] >>> [apiv2][body] POST http://localhost:5001/functions/projects/port80create/trigger_multicast {"eventId":"67bae7fa-a880-4e45-b8a9-59dfa592d101","eventType":"providers/firebase.auth/eventTypes/user.create","resource":{"name":"projects/port80create","service":"firebaseauth.googleapis.com"},"params":{},"timestamp":"2022-04-18T13:50:46.299Z","data":{"uid":"wc6jJLm1ILD7zqvq0iAdm2cepd57","email":"denglish357@gmail.com","emailVerified":false,"metadata":{"creationTime":"1650289846295","lastSignInTime":"1650289846293"},"customClaims":{},"providerData":[{"providerId":"password","email":"denglish357@gmail.com","federatedId":"denglish357@gmail.com","rawId":"denglish357@gmail.com"}]}}
+[debug] [2022-04-18T13:50:46.348Z] <<< [apiv2][status] POST http://localhost:5001/functions/projects/port80create/trigger_multicast 200
+[debug] [2022-04-18T13:50:46.348Z] <<< [apiv2][body] POST http://localhost:5001/functions/projects/port80create/trigger_multicast {"status":"multicast_acknowledged"}
+[debug] [2022-04-18T15:18:34.151Z] Received signal SIGHUP 1
+[info]  
+[info] i  emulators: Received SIGHUP for the first time. Starting a clean shutdown. 
+[info] i  emulators: Please wait for a clean shutdown or send the SIGHUP signal again to stop right now. 
+[debug] [2022-04-18T15:18:34.224Z] Error: write EIO
+    at afterWriteDispatched (internal/stream_base_commons.js:156:25)
+    at writeGeneric (internal/stream_base_commons.js:147:3)
+    at WriteStream.Socket._writeGeneric (net.js:798:11)
+    at WriteStream.Socket._write (net.js:810:8)
+    at writeOrBuffer (internal/streams/writable.js:358:12)
+    at WriteStream.Writable.write (internal/streams/writable.js:303:10)
+    at Console.log (/home/cliff1983/.nvm/versions/node/v14.18.1/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:79:23)
+    at Console._write (/home/cliff1983/.nvm/versions/node/v14.18.1/lib/node_modules/firebase-tools/node_modules/winston-transport/index.js:103:17)
+    at doWrite (/home/cliff1983/.nvm/versions/node/v14.18.1/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:428:64)
+    at writeOrBuffer (/home/cliff1983/.nvm/versions/node/v14.18.1/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:417:5)
+    at Console.Writable.write (/home/cliff1983/.nvm/versions/node/v14.18.1/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:334:11)
+    at DerivedLogger.ondata (/home/cliff1983/.nvm/versions/node/v14.18.1/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_readable.js:681:20)
+    at DerivedLogger.emit (events.js:412:35)
+    at DerivedLogger.emit (domain.js:475:12)
+    at addChunk (/home/cliff1983/.nvm/versions/node/v14.18.1/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_readable.js:298:12)
+    at readableAddChunk (/home/cliff1983/.nvm/versions/node/v14.18.1/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_readable.js:280:11)
+[error] 
+[error] Error: An unexpected error has occurred.
+[info] i  emulators: Shutting down emulators. {"metadata":{"emulator":{"name":"hub"},"message":"Shutting down emulators."}}
+[info] i  ui: Stopping Emulator UI {"metadata":{"emulator":{"name":"ui"},"message":"Stopping Emulator UI"}}
+[debug] [2022-04-18T15:18:34.285Z] node[4284]: ../src/node.cc:747:void node::ResetStdio(): Assertion `!(err != 0) || (err == -1 && (*__errno_location ()) == 1)' failed.
+ 1: 0xa389b0 node::Abort() [node]
+ 2: 0xa38a2e  [node]
+ {"metadata":{"emulator":{"name":"ui"},"message":"node[4284]: ../src/node.cc:747:void node::ResetStdio(): Assertion `!(err != 0) || (err == -1 && (*__errno_location ()) == 1)' failed.\n 1: 0xa389b0 node::Abort() [node]\n 2: 0xa38a2e  [node]\n"}}
+[debug] [2022-04-18T15:18:34.294Z]  3: 0x9fd974 node::ResetStdio() [node]
+ 4: 0x9fda30 node::SignalExit(int, siginfo_t*, void*) [node]
+ 5: 0x7ff2b06fa3c0  [/lib/x86_64-linux-gnu/libpthread.so.0]
+ 6: 0x7ff2b061349e epoll_wait [/lib/x86_64-linux-gnu/libc.so.6]
+ 7: 0x13d06bf  [node]
+ 8: 0x13be9e8 uv_run [node]
+ {"metadata":{"emulator":{"name":"ui"},"message":" 3: 0x9fd974 node::ResetStdio() [node]\n 4: 0x9fda30 node::SignalExit(int, siginfo_t*, void*) [node]\n 5: 0x7ff2b06fa3c0  [/lib/x86_64-linux-gnu/libpthread.so.0]\n 6: 0x7ff2b061349e epoll_wait [/lib/x86_64-linux-gnu/libc.so.6]\n 7: 0x13d06bf  [node]\n 8: 0x13be9e8 uv_run [node]\n"}}
+[debug] [2022-04-18T15:18:34.311Z]  9: 0xa79502 node::NodeMainInstance::Run() [node]
+10: 0xa01755 node::Start(int, char**) [node]
+11: 0x7ff2b05180b3 __libc_start_main [/lib/x86_64-linux-gnu/libc.so.6]
+ {"metadata":{"emulator":{"name":"ui"},"message":" 9: 0xa79502 node::NodeMainInstance::Run() [node]\n10: 0xa01755 node::Start(int, char**) [node]\n11: 0x7ff2b05180b3 __libc_start_main [/lib/x86_64-linux-gnu/libc.so.6]\n"}}
+[debug] [2022-04-18T15:18:34.320Z] 12: 0x98a4cc  [node]
+ {"metadata":{"emulator":{"name":"ui"},"message":"12: 0x98a4cc  [node]\n"}}
+[warn] ⚠  Emulator UI has exited upon receiving signal: SIGABRT 
+[info] i  functions: Stopping Functions Emulator {"metadata":{"emulator":{"name":"functions"},"message":"Stopping Functions Emulator"}}
+[info] i  database: Stopping Database Emulator {"metadata":{"emulator":{"name":"database"},"message":"Stopping Database Emulator"}}
+[debug] [2022-04-18T15:18:34.399Z] 17:18:34.382 [Thread-0] INFO com.firebase.server.forge.App$ - Attempting graceful shutdown.
+ {"metadata":{"emulator":{"name":"database"},"message":"17:18:34.382 [Thread-0] INFO com.firebase.server.forge.App$ - Attempting graceful shutdown.\n"}}
+[debug] [2022-04-21T12:45:57.028Z] ----------------------------------------------------------------------
+[debug] [2022-04-21T12:45:57.037Z] Command:       /home/cliff1983/.nvm/versions/node/v14.18.1/bin/node /home/cliff1983/.nvm/versions/node/v14.18.1/bin/firebase emulators:start
+[debug] [2022-04-21T12:45:57.038Z] CLI Version:   10.5.0
+[debug] [2022-04-21T12:45:57.039Z] Platform:      linux
+[debug] [2022-04-21T12:45:57.039Z] Node Version:  v14.18.1
+[debug] [2022-04-21T12:45:57.049Z] Time:          Thu Apr 21 2022 14:45:57 GMT+0200 (Central European Summer Time)
+[debug] [2022-04-21T12:45:57.049Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-04-21T12:45:57.065Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2022-04-21T12:45:57.489Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-04-21T12:45:57.491Z] > authorizing via signed-in user (denglish357@gmail.com)
+[debug] [2022-04-21T12:45:57.769Z] openjdk version "16.0.1" 2021-04-20
+
+[debug] [2022-04-21T12:45:57.771Z] OpenJDK Runtime Environment (build 16.0.1+9-Ubuntu-120.04)
+OpenJDK 64-Bit Server VM (build 16.0.1+9-Ubuntu-120.04, mixed mode, sharing)
+
+[debug] [2022-04-21T12:45:57.788Z] Parsed Java major version: 16
+[info] i  emulators: Starting emulators: auth, functions, firestore, database, storage {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: auth, functions, firestore, database, storage"}}
+[debug] [2022-04-21T12:45:57.838Z] [hub] writing locator at /tmp/hub-port80create.json
+[debug] [2022-04-18T16:46:03.291Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2022-04-18T16:46:03.292Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[warn] ⚠  functions: The following emulators are not running, calls to these services from the Functions emulator will affect production: hosting, pubsub {"metadata":{"emulator":{"name":"functions"},"message":"The following emulators are not running, calls to these services from the Functions emulator will affect production: \u001b[1mhosting, pubsub\u001b[22m"}}
+[warn] ⚠  Your requested "node" version "16" doesn't match your global version "14". Using node@14 from host. {"metadata":{"emulator":{"name":"functions"},"message":"Your requested \"node\" version \"16\" doesn't match your global version \"14\". Using node@14 from host."}}
+[debug] [2022-04-18T16:46:08.377Z] defaultcredentials: writing to file /home/cliff1983/.config/firebase/denglish357_gmail_com_application_default_credentials.json
+[debug] [2022-04-18T16:46:08.387Z] Setting GAC to /home/cliff1983/.config/firebase/denglish357_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to /home/cliff1983/.config/firebase/denglish357_gmail_com_application_default_credentials.json"}}
+[debug] [2022-04-18T16:46:08.393Z] > refreshing access token with scopes: []
+[debug] [2022-04-18T16:46:08.398Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2022-04-18T16:46:08.722Z] <<< HTTP RESPONSE 200 {"pragma":"no-cache","cache-control":"no-cache, no-store, max-age=0, must-revalidate","expires":"Mon, 01 Jan 1990 00:00:00 GMT","date":"Mon, 18 Apr 2022 16:46:08 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-04-18T16:46:08.745Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/port80create/adminSdkConfig [none]
+[debug] [2022-04-18T16:46:09.523Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/port80create/adminSdkConfig 200
+[debug] [2022-04-18T16:46:09.524Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/port80create/adminSdkConfig {"projectId":"port80create","databaseURL":"https://port80create-default-rtdb.europe-west1.firebasedatabase.app","storageBucket":"port80create.appspot.com","locationId":"europe-west6"}
+[debug] [2022-04-18T16:46:09.585Z] Ignoring unsupported arg: projectId {"metadata":{"emulator":{"name":"firestore"},"message":"Ignoring unsupported arg: projectId"}}
+[debug] [2022-04-18T16:46:09.586Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"firestore"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2022-04-18T16:46:09.586Z] Starting Firestore Emulator with command {"binary":"java","args":["-Dgoogle.cloud_firestore.debug_log_level=FINE","-Duser.language=en","-jar","/home/cliff1983/.cache/firebase/emulators/cloud-firestore-emulator-v1.14.1.jar","--host","localhost","--port",8081,"--rules","/home/cliff1983/Documents/port80create/firestore.rules","--functions_emulator","localhost:5001"],"optionalArgs":["port","webchannel_port","host","rules","functions_emulator","seed_from_export"],"joinArgs":false} {"metadata":{"emulator":{"name":"firestore"},"message":"Starting Firestore Emulator with command {\"binary\":\"java\",\"args\":[\"-Dgoogle.cloud_firestore.debug_log_level=FINE\",\"-Duser.language=en\",\"-jar\",\"/home/cliff1983/.cache/firebase/emulators/cloud-firestore-emulator-v1.14.1.jar\",\"--host\",\"localhost\",\"--port\",8081,\"--rules\",\"/home/cliff1983/Documents/port80create/firestore.rules\",\"--functions_emulator\",\"localhost:5001\"],\"optionalArgs\":[\"port\",\"webchannel_port\",\"host\",\"rules\",\"functions_emulator\",\"seed_from_export\"],\"joinArgs\":false}"}}
+[info] i  firestore: Firestore Emulator logging to firestore-debug.log {"metadata":{"emulator":{"name":"firestore"},"message":"Firestore Emulator logging to \u001b[1mfirestore-debug.log\u001b[22m"}}
+[debug] [2022-04-18T16:46:13.875Z] Apr 18, 2022 6:46:13 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketServer start
+INFO: Started WebSocket server on ws://localhost:43383
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Apr 18, 2022 6:46:13 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketServer start\nINFO: Started WebSocket server on ws://localhost:43383\n"}}
+[debug] [2022-04-18T16:46:13.974Z] API endpoint: http:// {"metadata":{"emulator":{"name":"firestore"},"message":"API endpoint: http://"}}
+[debug] [2022-04-18T16:46:13.975Z] localhost:8081
+If you are using a library that supports the FIRESTORE_EMULATOR_HOST environment variable, run:
+
+   export FIRESTORE_EMULATOR_HOST=localhost:8081
+
+Dev App Server is now running.
+
+ {"metadata":{"emulator":{"name":"firestore"},"message":"localhost:8081\nIf you are using a library that supports the FIRESTORE_EMULATOR_HOST environment variable, run:\n\n   export FIRESTORE_EMULATOR_HOST=localhost:8081\n\nDev App Server is now running.\n\n"}}
+[debug] [2022-04-18T16:46:14.195Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/port80create [none]
+[debug] [2022-04-18T16:46:14.828Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/port80create 200
+[debug] [2022-04-18T16:46:14.829Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/port80create {"projectId":"port80create","projectNumber":"544209860326","displayName":"port80Create","name":"projects/port80create","resources":{"hostingSite":"port80create","realtimeDatabaseInstance":"port80create-default-rtdb","storageBucket":"port80create.appspot.com","locationId":"europe-west6"},"state":"ACTIVE"}
+[debug] [2022-04-18T16:46:14.832Z] database rules config:  [{"instance":"port80create-default-rtdb","rules":"/home/cliff1983/Documents/port80create/database.rules.json"}]
+[debug] [2022-04-18T16:46:14.843Z] Ignoring unsupported arg: projectId {"metadata":{"emulator":{"name":"database"},"message":"Ignoring unsupported arg: projectId"}}
+[debug] [2022-04-18T16:46:14.844Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"database"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2022-04-18T16:46:14.844Z] Ignoring unsupported arg: rules {"metadata":{"emulator":{"name":"database"},"message":"Ignoring unsupported arg: rules"}}
+[debug] [2022-04-18T16:46:14.844Z] Starting Database Emulator with command {"binary":"java","args":["-Duser.language=en","-jar","/home/cliff1983/.cache/firebase/emulators/firebase-database-emulator-v4.7.3.jar","--host","localhost","--port",9000,"--functions_emulator_host","localhost","--functions_emulator_port",5001],"optionalArgs":["port","host","functions_emulator_port","functions_emulator_host"],"joinArgs":false} {"metadata":{"emulator":{"name":"database"},"message":"Starting Database Emulator with command {\"binary\":\"java\",\"args\":[\"-Duser.language=en\",\"-jar\",\"/home/cliff1983/.cache/firebase/emulators/firebase-database-emulator-v4.7.3.jar\",\"--host\",\"localhost\",\"--port\",9000,\"--functions_emulator_host\",\"localhost\",\"--functions_emulator_port\",5001],\"optionalArgs\":[\"port\",\"host\",\"functions_emulator_port\",\"functions_emulator_host\"],\"joinArgs\":false}"}}
+[info] i  database: Database Emulator logging to database-debug.log {"metadata":{"emulator":{"name":"database"},"message":"Database Emulator logging to \u001b[1mdatabase-debug.log\u001b[22m"}}
+[debug] [2022-04-18T16:46:20.066Z] 18:46:20.060 [NamespaceSystem-akka.actor.default-dispatcher-4] INFO akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+ {"metadata":{"emulator":{"name":"database"},"message":"18:46:20.060 [NamespaceSystem-akka.actor.default-dispatcher-4] INFO akka.event.slf4j.Slf4jLogger - Slf4jLogger started\n"}}
+[debug] [2022-04-18T16:46:20.894Z] 18:46:20.893 [main] INFO com.firebase.server.forge.App$ - Listening at localhost:9000
+ {"metadata":{"emulator":{"name":"database"},"message":"18:46:20.893 [main] INFO com.firebase.server.forge.App$ - Listening at localhost:9000\n"}}
+[debug] [2022-04-18T16:47:05.431Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"storage"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2022-04-18T16:47:09.699Z] Temp file directory for storage emulator: /tmp/firebase/storage/blobs {"metadata":{"emulator":{"name":"storage"},"message":"Temp file directory for storage emulator: /tmp/firebase/storage/blobs"}}
+[debug] [2022-04-18T16:47:09.766Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2022-04-18T16:47:09.768Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2022-04-18T16:47:09.770Z] Starting Emulator UI with command {"binary":"node","args":["/home/cliff1983/.cache/firebase/emulators/ui-v1.6.5/server.bundle.js"],"optionalArgs":[],"joinArgs":false} {"metadata":{"emulator":{"name":"ui"},"message":"Starting Emulator UI with command {\"binary\":\"node\",\"args\":[\"/home/cliff1983/.cache/firebase/emulators/ui-v1.6.5/server.bundle.js\"],\"optionalArgs\":[],\"joinArgs\":false}"}}
+[info] i  ui: Emulator UI logging to ui-debug.log {"metadata":{"emulator":{"name":"ui"},"message":"Emulator UI logging to \u001b[1mui-debug.log\u001b[22m"}}
+[debug] [2022-04-18T16:47:10.155Z] Web / API server started at localhost:4000
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at localhost:4000\n"}}
+[info] i  functions: Watching "/home/cliff1983/Documents/port80create/functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"/home/cliff1983/Documents/port80create/functions\" for Cloud Functions..."}}
+[debug] [2022-04-18T16:47:10.335Z] Validating nodejs source
+[debug] [2022-04-18T16:47:18.734Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-04-18T16:47:18.736Z] Building nodejs source
+[debug] [2022-04-18T16:47:18.736Z] Analyzing nodejs backend spec
+[debug] [2022-04-18T16:47:19.279Z] >>> HTTP REQUEST PUT http://localhost:9000/.settings/rules.json?ns=port80create-default-rtdb  
+ {
+  /* Visit https://firebase.google.com/docs/database/security to learn more about security rules. */
+  "rules": {
+    ".read": false,
+    ".write": false
+  }
+}
+[debug] [2022-04-18T16:47:20.742Z] <<< HTTP RESPONSE 200 {"content-length":"15","content-type":"application/json; charset=utf-8","access-control-allow-origin":"*","cache-control":"no-cache","x-firebase-project-id":"port80create-default-rtdb","x-firebase-project-number":"123456789","x-firebase-uuid":"84a27098-80bb-4a86-9637-9f33ade1c0d7"}
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+│ i  View Emulator UI at http://localhost:4000                │
+└─────────────────────────────────────────────────────────────┘
+
+┌────────────────┬────────────────┬─────────────────────────────────┐
+│ Emulator       │ Host:Port      │ View in Emulator UI             │
+├────────────────┼────────────────┼─────────────────────────────────┤
+│ Authentication │ localhost:9099 │ http://localhost:4000/auth      │
+├────────────────┼────────────────┼─────────────────────────────────┤
+│ Functions      │ localhost:5001 │ http://localhost:4000/functions │
+├────────────────┼────────────────┼─────────────────────────────────┤
+│ Firestore      │ localhost:8081 │ http://localhost:4000/firestore │
+├────────────────┼────────────────┼─────────────────────────────────┤
+│ Database       │ localhost:9000 │ http://localhost:4000/database  │
+├────────────────┼────────────────┼─────────────────────────────────┤
+│ Storage        │ localhost:9199 │ http://localhost:4000/storage   │
+└────────────────┴────────────────┴─────────────────────────────────┘
+  Emulator Hub running at localhost:4400
+  Other reserved ports: 4500
+
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
+[debug] [2022-04-18T16:53:57.881Z] >>> [apiv2][query] POST http://localhost:5001/functions/projects/port80create/trigger_multicast [none]
+[debug] [2022-04-18T16:53:57.883Z] >>> [apiv2][body] POST http://localhost:5001/functions/projects/port80create/trigger_multicast {"eventId":"2687afb2-bbf9-42c9-a62a-370eabac1a90","eventType":"providers/firebase.auth/eventTypes/user.create","resource":{"name":"projects/port80create","service":"firebaseauth.googleapis.com"},"params":{},"timestamp":"2022-04-18T16:53:57.876Z","data":{"uid":"3587evNtE1FM7UAB9kVb1b6IngvB","email":"denglish357@gmail.com","emailVerified":false,"metadata":{"creationTime":"1650300837872","lastSignInTime":"1650300837871"},"customClaims":{},"providerData":[{"providerId":"password","email":"denglish357@gmail.com","federatedId":"denglish357@gmail.com","rawId":"denglish357@gmail.com"}]}}
+[debug] [2022-04-18T16:53:57.952Z] <<< [apiv2][status] POST http://localhost:5001/functions/projects/port80create/trigger_multicast 200
+[debug] [2022-04-18T16:53:57.953Z] <<< [apiv2][body] POST http://localhost:5001/functions/projects/port80create/trigger_multicast {"status":"multicast_acknowledged"}
+[debug] [2022-04-18T19:29:35.734Z] Ignoring signal SIGHUP due to short delay of -234981760ms
+[error] 
+[error] Error: Storage Emulator Rules runtime exited unexpectedly.
+[debug] [2022-04-18T19:29:36.135Z] Error: write EIO
+    at afterWriteDispatched (internal/stream_base_commons.js:156:25)
+    at writeGeneric (internal/stream_base_commons.js:147:3)
+    at WriteStream.Socket._writeGeneric (net.js:798:11)
+    at WriteStream.Socket._write (net.js:810:8)
+    at writeOrBuffer (internal/streams/writable.js:358:12)
+    at WriteStream.Writable.write (internal/streams/writable.js:303:10)
+    at Console.log (/home/cliff1983/.nvm/versions/node/v14.18.1/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:79:23)
+    at Console._write (/home/cliff1983/.nvm/versions/node/v14.18.1/lib/node_modules/firebase-tools/node_modules/winston-transport/index.js:103:17)
+    at doWrite (/home/cliff1983/.nvm/versions/node/v14.18.1/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:428:64)
+    at writeOrBuffer (/home/cliff1983/.nvm/versions/node/v14.18.1/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:417:5)
+    at Console.Writable.write (/home/cliff1983/.nvm/versions/node/v14.18.1/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:334:11)
+    at DerivedLogger.ondata (/home/cliff1983/.nvm/versions/node/v14.18.1/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_readable.js:681:20)
+    at DerivedLogger.emit (events.js:412:35)
+    at DerivedLogger.emit (domain.js:475:12)
+    at addChunk (/home/cliff1983/.nvm/versions/node/v14.18.1/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_readable.js:298:12)
+    at readableAddChunk (/home/cliff1983/.nvm/versions/node/v14.18.1/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_readable.js:280:11)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2022-04-18T20:20:32.584Z] ----------------------------------------------------------------------
+[debug] [2022-04-18T20:20:32.591Z] Command:       /home/cliff1983/.nvm/versions/node/v14.18.1/bin/node /home/cliff1983/.nvm/versions/node/v14.18.1/bin/firebase emulators:start
+[debug] [2022-04-18T20:20:32.592Z] CLI Version:   10.5.0
+[debug] [2022-04-18T20:20:32.593Z] Platform:      linux
+[debug] [2022-04-18T20:20:32.593Z] Node Version:  v14.18.1
+[debug] [2022-04-18T20:20:32.602Z] Time:          Mon Apr 18 2022 22:20:32 GMT+0200 (Central European Summer Time)
+[debug] [2022-04-18T20:20:32.603Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-04-18T20:20:32.880Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-04-18T20:20:32.881Z] > authorizing via signed-in user (denglish357@gmail.com)
+[debug] [2022-04-18T20:20:33.187Z] openjdk version "16.0.1" 2021-04-20
+
+[debug] [2022-04-18T20:20:33.190Z] OpenJDK Runtime Environment (build 16.0.1+9-Ubuntu-120.04)
+OpenJDK 64-Bit Server VM (build 16.0.1+9-Ubuntu-120.04, mixed mode, sharing)
+
+[debug] [2022-04-18T20:20:33.204Z] Parsed Java major version: 16
+[info] i  emulators: Starting emulators: auth, functions, firestore, database, storage {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: auth, functions, firestore, database, storage"}}
+[debug] [2022-04-18T20:20:33.300Z] [hub] writing locator at /tmp/hub-port80create.json
+[warn] ⚠  functions: The following emulators are not running, calls to these services from the Functions emulator will affect production: hosting, pubsub {"metadata":{"emulator":{"name":"functions"},"message":"The following emulators are not running, calls to these services from the Functions emulator will affect production: \u001b[1mhosting, pubsub\u001b[22m"}}
+[warn] ⚠  Your requested "node" version "16" doesn't match your global version "14". Using node@14 from host. {"metadata":{"emulator":{"name":"functions"},"message":"Your requested \"node\" version \"16\" doesn't match your global version \"14\". Using node@14 from host."}}
+[debug] [2022-04-18T20:20:33.375Z] defaultcredentials: writing to file /home/cliff1983/.config/firebase/denglish357_gmail_com_application_default_credentials.json
+[debug] [2022-04-18T20:20:33.384Z] Setting GAC to /home/cliff1983/.config/firebase/denglish357_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to /home/cliff1983/.config/firebase/denglish357_gmail_com_application_default_credentials.json"}}
+[debug] [2022-04-18T20:20:33.393Z] > refreshing access token with scopes: []
+[debug] [2022-04-18T20:20:33.397Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2022-04-18T20:20:33.630Z] <<< HTTP RESPONSE 200 {"expires":"Mon, 01 Jan 1990 00:00:00 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","date":"Mon, 18 Apr 2022 20:20:33 GMT","pragma":"no-cache","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-04-18T20:20:33.661Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/port80create/adminSdkConfig [none]
+[debug] [2022-04-18T20:20:34.104Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/port80create/adminSdkConfig 200
+[debug] [2022-04-18T20:20:34.105Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/port80create/adminSdkConfig {"projectId":"port80create","databaseURL":"https://port80create-default-rtdb.europe-west1.firebasedatabase.app","storageBucket":"port80create.appspot.com","locationId":"europe-west6"}
+[debug] [2022-04-18T20:20:34.148Z] Ignoring unsupported arg: projectId {"metadata":{"emulator":{"name":"firestore"},"message":"Ignoring unsupported arg: projectId"}}
+[debug] [2022-04-18T20:20:34.149Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"firestore"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2022-04-18T20:20:34.150Z] Starting Firestore Emulator with command {"binary":"java","args":["-Dgoogle.cloud_firestore.debug_log_level=FINE","-Duser.language=en","-jar","/home/cliff1983/.cache/firebase/emulators/cloud-firestore-emulator-v1.14.1.jar","--host","localhost","--port",8081,"--rules","/home/cliff1983/Documents/port80create/firestore.rules","--functions_emulator","localhost:5001"],"optionalArgs":["port","webchannel_port","host","rules","functions_emulator","seed_from_export"],"joinArgs":false} {"metadata":{"emulator":{"name":"firestore"},"message":"Starting Firestore Emulator with command {\"binary\":\"java\",\"args\":[\"-Dgoogle.cloud_firestore.debug_log_level=FINE\",\"-Duser.language=en\",\"-jar\",\"/home/cliff1983/.cache/firebase/emulators/cloud-firestore-emulator-v1.14.1.jar\",\"--host\",\"localhost\",\"--port\",8081,\"--rules\",\"/home/cliff1983/Documents/port80create/firestore.rules\",\"--functions_emulator\",\"localhost:5001\"],\"optionalArgs\":[\"port\",\"webchannel_port\",\"host\",\"rules\",\"functions_emulator\",\"seed_from_export\"],\"joinArgs\":false}"}}
+[info] i  firestore: Firestore Emulator logging to firestore-debug.log {"metadata":{"emulator":{"name":"firestore"},"message":"Firestore Emulator logging to \u001b[1mfirestore-debug.log\u001b[22m"}}
+[debug] [2022-04-18T20:20:38.913Z] Apr 18, 2022 10:20:38 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketServer start
+INFO: Started WebSocket server on ws://localhost:33081
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Apr 18, 2022 10:20:38 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketServer start\nINFO: Started WebSocket server on ws://localhost:33081\n"}}
+[debug] [2022-04-18T20:20:39.059Z] API endpoint: http:// {"metadata":{"emulator":{"name":"firestore"},"message":"API endpoint: http://"}}
+[debug] [2022-04-18T20:20:39.061Z] localhost:8081
+If you are using a library that supports the FIRESTORE_EMULATOR_HOST environment variable, run:
+
+   export FIRESTORE_EMULATOR_HOST=localhost:8081
+
+ {"metadata":{"emulator":{"name":"firestore"},"message":"localhost:8081\nIf you are using a library that supports the FIRESTORE_EMULATOR_HOST environment variable, run:\n\n   export FIRESTORE_EMULATOR_HOST=localhost:8081\n\n"}}
+[debug] [2022-04-18T20:20:39.063Z] Dev App Server is now running.
+
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Dev App Server is now running.\n\n"}}
+[debug] [2022-04-18T20:20:39.253Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/port80create [none]
+[debug] [2022-04-18T20:20:39.527Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/port80create 200
+[debug] [2022-04-18T20:20:39.528Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/port80create {"projectId":"port80create","projectNumber":"544209860326","displayName":"port80Create","name":"projects/port80create","resources":{"hostingSite":"port80create","realtimeDatabaseInstance":"port80create-default-rtdb","storageBucket":"port80create.appspot.com","locationId":"europe-west6"},"state":"ACTIVE"}
+[debug] [2022-04-18T20:20:39.529Z] database rules config:  [{"instance":"port80create-default-rtdb","rules":"/home/cliff1983/Documents/port80create/database.rules.json"}]
+[debug] [2022-04-18T20:20:39.537Z] Ignoring unsupported arg: projectId {"metadata":{"emulator":{"name":"database"},"message":"Ignoring unsupported arg: projectId"}}
+[debug] [2022-04-18T20:20:39.538Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"database"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2022-04-18T20:20:39.538Z] Ignoring unsupported arg: rules {"metadata":{"emulator":{"name":"database"},"message":"Ignoring unsupported arg: rules"}}
+[debug] [2022-04-18T20:20:39.538Z] Starting Database Emulator with command {"binary":"java","args":["-Duser.language=en","-jar","/home/cliff1983/.cache/firebase/emulators/firebase-database-emulator-v4.7.3.jar","--host","localhost","--port",9000,"--functions_emulator_host","localhost","--functions_emulator_port",5001],"optionalArgs":["port","host","functions_emulator_port","functions_emulator_host"],"joinArgs":false} {"metadata":{"emulator":{"name":"database"},"message":"Starting Database Emulator with command {\"binary\":\"java\",\"args\":[\"-Duser.language=en\",\"-jar\",\"/home/cliff1983/.cache/firebase/emulators/firebase-database-emulator-v4.7.3.jar\",\"--host\",\"localhost\",\"--port\",9000,\"--functions_emulator_host\",\"localhost\",\"--functions_emulator_port\",5001],\"optionalArgs\":[\"port\",\"host\",\"functions_emulator_port\",\"functions_emulator_host\"],\"joinArgs\":false}"}}
+[info] i  database: Database Emulator logging to database-debug.log {"metadata":{"emulator":{"name":"database"},"message":"Database Emulator logging to \u001b[1mdatabase-debug.log\u001b[22m"}}
+[debug] [2022-04-18T20:20:45.728Z] 22:20:45.722 [NamespaceSystem-akka.actor.default-dispatcher-5] INFO akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+ {"metadata":{"emulator":{"name":"database"},"message":"22:20:45.722 [NamespaceSystem-akka.actor.default-dispatcher-5] INFO akka.event.slf4j.Slf4jLogger - Slf4jLogger started\n"}}
+[debug] [2022-04-18T20:20:46.671Z] 22:20:46.670 [main] INFO com.firebase.server.forge.App$ - Listening at localhost:9000
+ {"metadata":{"emulator":{"name":"database"},"message":"22:20:46.670 [main] INFO com.firebase.server.forge.App$ - Listening at localhost:9000\n"}}
+[debug] [2022-04-18T20:21:38.624Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"storage"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2022-04-18T20:21:45.477Z] Temp file directory for storage emulator: /tmp/firebase/storage/blobs {"metadata":{"emulator":{"name":"storage"},"message":"Temp file directory for storage emulator: /tmp/firebase/storage/blobs"}}
+[debug] [2022-04-18T20:21:45.533Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2022-04-18T20:21:45.534Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2022-04-18T20:21:45.535Z] Starting Emulator UI with command {"binary":"node","args":["/home/cliff1983/.cache/firebase/emulators/ui-v1.6.5/server.bundle.js"],"optionalArgs":[],"joinArgs":false} {"metadata":{"emulator":{"name":"ui"},"message":"Starting Emulator UI with command {\"binary\":\"node\",\"args\":[\"/home/cliff1983/.cache/firebase/emulators/ui-v1.6.5/server.bundle.js\"],\"optionalArgs\":[],\"joinArgs\":false}"}}
+[info] i  ui: Emulator UI logging to ui-debug.log {"metadata":{"emulator":{"name":"ui"},"message":"Emulator UI logging to \u001b[1mui-debug.log\u001b[22m"}}
+[debug] [2022-04-18T20:21:46.057Z] Web / API server started at localhost:4000
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at localhost:4000\n"}}
+[info] i  functions: Watching "/home/cliff1983/Documents/port80create/functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"/home/cliff1983/Documents/port80create/functions\" for Cloud Functions..."}}
+[debug] [2022-04-18T20:21:46.114Z] Validating nodejs source
+[debug] [2022-04-18T20:21:55.317Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-04-18T20:21:55.318Z] Building nodejs source
+[debug] [2022-04-18T20:21:55.320Z] Analyzing nodejs backend spec
+[debug] [2022-04-18T20:21:55.996Z] >>> HTTP REQUEST PUT http://localhost:9000/.settings/rules.json?ns=port80create-default-rtdb  
+ {
+  /* Visit https://firebase.google.com/docs/database/security to learn more about security rules. */
+  "rules": {
+    ".read": false,
+    ".write": false
+  }
+}
+[debug] [2022-04-18T20:21:57.691Z] <<< HTTP RESPONSE 200 {"content-length":"15","content-type":"application/json; charset=utf-8","access-control-allow-origin":"*","cache-control":"no-cache","x-firebase-project-id":"port80create-default-rtdb","x-firebase-project-number":"123456789","x-firebase-uuid":"517fc727-3e35-4df1-94f2-54e7b11b1dac"}
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+│ i  View Emulator UI at http://localhost:4000                │
+└─────────────────────────────────────────────────────────────┘
+
+┌────────────────┬────────────────┬─────────────────────────────────┐
+│ Emulator       │ Host:Port      │ View in Emulator UI             │
+├────────────────┼────────────────┼─────────────────────────────────┤
+│ Authentication │ localhost:9099 │ http://localhost:4000/auth      │
+├────────────────┼────────────────┼─────────────────────────────────┤
+│ Functions      │ localhost:5001 │ http://localhost:4000/functions │
+├────────────────┼────────────────┼─────────────────────────────────┤
+│ Firestore      │ localhost:8081 │ http://localhost:4000/firestore │
+├────────────────┼────────────────┼─────────────────────────────────┤
+│ Database       │ localhost:9000 │ http://localhost:4000/database  │
+├────────────────┼────────────────┼─────────────────────────────────┤
+│ Storage        │ localhost:9199 │ http://localhost:4000/storage   │
+└────────────────┴────────────────┴─────────────────────────────────┘
+  Emulator Hub running at localhost:4400
+  Other reserved ports: 4500
+
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
+[debug] [2022-04-18T20:33:46.218Z] >>> [apiv2][query] POST http://localhost:5001/functions/projects/port80create/trigger_multicast [none]
+[debug] [2022-04-18T20:33:46.221Z] >>> [apiv2][body] POST http://localhost:5001/functions/projects/port80create/trigger_multicast {"eventId":"36652d84-7e08-4073-af7d-26cd85ea31f3","eventType":"providers/firebase.auth/eventTypes/user.create","resource":{"name":"projects/port80create","service":"firebaseauth.googleapis.com"},"params":{},"timestamp":"2022-04-18T20:33:46.217Z","data":{"uid":"teoMg0iqq1YXqA8I63oK2QXxuw4u","email":"denglish357@gmail.com","emailVerified":false,"metadata":{"creationTime":"1650314026212","lastSignInTime":"1650314026211"},"customClaims":{},"providerData":[{"providerId":"password","email":"denglish357@gmail.com","federatedId":"denglish357@gmail.com","rawId":"denglish357@gmail.com"}]}}
+[debug] [2022-04-18T20:33:46.280Z] <<< [apiv2][status] POST http://localhost:5001/functions/projects/port80create/trigger_multicast 200
+[debug] [2022-04-18T20:33:46.281Z] <<< [apiv2][body] POST http://localhost:5001/functions/projects/port80create/trigger_multicast {"status":"multicast_acknowledged"}
+[debug] [2022-04-18T23:23:36.509Z] Received signal SIGHUP 1
+[info]  
+[info] i  emulators: Received SIGHUP for the first time. Starting a clean shutdown. 
+[info] i  emulators: Please wait for a clean shutdown or send the SIGHUP signal again to stop right now. 
+[debug] [2022-04-18T23:23:36.527Z] Error: write EIO
+    at afterWriteDispatched (internal/stream_base_commons.js:156:25)
+    at writeGeneric (internal/stream_base_commons.js:147:3)
+    at WriteStream.Socket._writeGeneric (net.js:798:11)
+    at WriteStream.Socket._write (net.js:810:8)
+    at writeOrBuffer (internal/streams/writable.js:358:12)
+    at WriteStream.Writable.write (internal/streams/writable.js:303:10)
+    at Console.log (/home/cliff1983/.nvm/versions/node/v14.18.1/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:79:23)
+    at Console._write (/home/cliff1983/.nvm/versions/node/v14.18.1/lib/node_modules/firebase-tools/node_modules/winston-transport/index.js:103:17)
+    at doWrite (/home/cliff1983/.nvm/versions/node/v14.18.1/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:428:64)
+    at writeOrBuffer (/home/cliff1983/.nvm/versions/node/v14.18.1/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:417:5)
+    at Console.Writable.write (/home/cliff1983/.nvm/versions/node/v14.18.1/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:334:11)
+    at DerivedLogger.ondata (/home/cliff1983/.nvm/versions/node/v14.18.1/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_readable.js:681:20)
+    at DerivedLogger.emit (events.js:412:35)
+    at DerivedLogger.emit (domain.js:475:12)
+    at addChunk (/home/cliff1983/.nvm/versions/node/v14.18.1/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_readable.js:298:12)
+    at readableAddChunk (/home/cliff1983/.nvm/versions/node/v14.18.1/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_readable.js:280:11)
+[error] 
+[error] Error: An unexpected error has occurred.
+[info] i  emulators: Shutting down emulators. {"metadata":{"emulator":{"name":"hub"},"message":"Shutting down emulators."}}
+[info] i  ui: Stopping Emulator UI {"metadata":{"emulator":{"name":"ui"},"message":"Stopping Emulator UI"}}
+[debug] [2022-04-18T23:23:36.548Z] node[4257]: ../src/node.cc:747:void node::ResetStdio(): Assertion `!(err != 0) || (err == -1 && (*__errno_location ()) == 1)' failed.
+ {"metadata":{"emulator":{"name":"ui"},"message":"node[4257]: ../src/node.cc:747:void node::ResetStdio(): Assertion `!(err != 0) || (err == -1 && (*__errno_location ()) == 1)' failed.\n"}}
+[debug] [2022-04-18T23:23:36.556Z]  1: 0xa389b0 node::Abort() [node]
+ 2: 0xa38a2e  [node]
+ 3: 0x9fd974 node::ResetStdio() [node]
+ 4: 0x9fda30 node::SignalExit(int, siginfo_t*, void*) [node]
+ 5: 0x7f08b4dc63c0  [/lib/x86_64-linux-gnu/libpthread.so.0]
+ 6: 0x7f08b4cdf49e epoll_wait [/lib/x86_64-linux-gnu/libc.so.6]
+ {"metadata":{"emulator":{"name":"ui"},"message":" 1: 0xa389b0 node::Abort() [node]\n 2: 0xa38a2e  [node]\n 3: 0x9fd974 node::ResetStdio() [node]\n 4: 0x9fda30 node::SignalExit(int, siginfo_t*, void*) [node]\n 5: 0x7f08b4dc63c0  [/lib/x86_64-linux-gnu/libpthread.so.0]\n 6: 0x7f08b4cdf49e epoll_wait [/lib/x86_64-linux-gnu/libc.so.6]\n"}}
+[debug] [2022-04-18T23:23:36.562Z]  7: 0x13d06bf  [node]
+ 8: 0x13be9e8 uv_run [node]
+ {"metadata":{"emulator":{"name":"ui"},"message":" 7: 0x13d06bf  [node]\n 8: 0x13be9e8 uv_run [node]\n"}}
+[debug] [2022-04-18T23:23:36.569Z]  9: 0xa79502 node::NodeMainInstance::Run() [node]
+10: 0xa01755 node::Start(int, char**) [node]
+11: 0x7f08b4be40b3 __libc_start_main [/lib/x86_64-linux-gnu/libc.so.6]
+12: 0x98a4cc  [node]
+ {"metadata":{"emulator":{"name":"ui"},"message":" 9: 0xa79502 node::NodeMainInstance::Run() [node]\n10: 0xa01755 node::Start(int, char**) [node]\n11: 0x7f08b4be40b3 __libc_start_main [/lib/x86_64-linux-gnu/libc.so.6]\n12: 0x98a4cc  [node]\n"}}
+[warn] ⚠  Emulator UI has exited upon receiving signal: SIGABRT 
+[info] i  functions: Stopping Functions Emulator {"metadata":{"emulator":{"name":"functions"},"message":"Stopping Functions Emulator"}}
+[info] i  database: Stopping Database Emulator {"metadata":{"emulator":{"name":"database"},"message":"Stopping Database Emulator"}}
+[debug] [2022-04-18T23:23:36.620Z] 01:23:36.604 [Thread-0] INFO com.firebase.server.forge.App$ - Attempting graceful shutdown.
+ {"metadata":{"emulator":{"name":"database"},"message":"01:23:36.604 [Thread-0] INFO com.firebase.server.forge.App$ - Attempting graceful shutdown.\n"}}
+[debug] [2022-04-18T23:23:36.668Z] 01:23:36.644 [NamespaceSystem-akka.actor.default-dispatcher-6] INFO com.firebase.core.namespace.Terminator$Terminator - 1 actors left to terminate: port80create-default-rtdb
+ {"metadata":{"emulator":{"name":"database"},"message":"01:23:36.644 [NamespaceSystem-akka.actor.default-dispatcher-6] INFO com.firebase.core.namespace.Terminator$Terminator - 1 actors left to terminate: port80create-default-rtdb\n"}}
+[debug] [2022-04-18T23:23:36.712Z] 01:23:36.711 [NamespaceSystem-akka.actor.default-dispatcher-10] INFO com.firebase.core.namespace.NamespaceActor - Stopping namespace actor for port80create-default-rtdb
+ {"metadata":{"emulator":{"name":"database"},"message":"01:23:36.711 [NamespaceSystem-akka.actor.default-dispatcher-10] INFO com.firebase.core.namespace.NamespaceActor - Stopping namespace actor for port80create-default-rtdb\n"}}
+[debug] [2022-04-18T23:23:36.717Z] 01:23:36.716 [NamespaceSystem-akka.actor.default-dispatcher-10] INFO com.firebase.core.namespace.NamespaceActor - Gauges removed for port80create-default-rtdb
+ {"metadata":{"emulator":{"name":"database"},"message":"01:23:36.716 [NamespaceSystem-akka.actor.default-dispatcher-10] INFO com.firebase.core.namespace.NamespaceActor - Gauges removed for port80create-default-rtdb\n"}}
+[debug] [2022-04-18T23:23:36.757Z] 01:23:36.756 [Thread-0] INFO com.firebase.server.forge.App$ - Graceful shutdown complete.
+ {"metadata":{"emulator":{"name":"database"},"message":"01:23:36.756 [Thread-0] INFO com.firebase.server.forge.App$ - Graceful shutdown complete.\n"}}
